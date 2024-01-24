@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    /* font-family: "gilroy"; */
+}
+#main{
+    height:100%;
+    width:100%;
+    background-image: url(https://images.unsplash.com/photo-1503470292355-d6d0c0223c0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: conver;
+    background-position:-30% -20%;
+    background-repeat: no-repeat;
+}
+#nav{
+    position: relative;
+    height: 100px;
+    width:100%;
+    padding:0 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav h6{
+    height: 35px;
+    width:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+#nav #nlinks{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap:20px;
+}
+#nlinks a{
+    position: relative;
+    color:#000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+#nlinks #active::before{
+    content: "";
+    width:35%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top:-8px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#nav i{
+    height: 35px;
+    width:35px;
+    color:#fff;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-text{
+    width:400px;
+    /* background-color: yellow; */
+    position: absolute;
+    left: 12%;
+    top:50%;
+    transform: translate(-12%,-50%);
+}
+#main-text h5{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#main-text h5 sup{
+    font-size: 8px;
+}
+#main-text h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#main-text #text{
+    display: flex;
+    width:100%;
+    gap:15px;
+}
+#text #line{
+    width:100px;
+    height:2px;
+    margin-top:10px;
+    background-color:black;  
+}
+#text #para{
+    width:270px;
+}
+#main #plus{
+    width:50px;
+    height: 50px;
+    padding:20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#fff;
+    position: absolute;
+    left:70%;
+    top:calc(100% - 190px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main #btm-container{
+    width:70%;
+    background-color:#000;
+    padding:50px;
+    position: absolute;
+    bottom: 0;
+    color:#ffff;
+    display: flex;
+    justify-content: space-around;
+}
